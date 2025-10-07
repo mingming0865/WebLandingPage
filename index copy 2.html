@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 80/20 Learning</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        h1,
+        h2 {
+            margin-top: 30px;
+        }
+
+        .box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center text-primary mb-4">🚀 Học Bootstrap 5 theo nguyên lý 80/20</h1>
+
+        <!-- 1. Grid layout -->
+        <h2>1️⃣ Grid System</h2>
+        <div class="row text-center">
+            <div class="col-md-4 box">.col-md-4</div>
+            <div class="col-md-4 box">.col-md-4</div>
+            <div class="col-md-4 box">.col-md-4</div>
+        </div>
+
+        <!-- 2. Typography -->
+        <h2>2️⃣ Typography</h2>
+        <p class="lead">Bootstrap cung cấp class để định dạng chữ nhanh: <code>.lead</code>, <code>.text-center</code>,
+            <code>.fw-bold</code>.</p>
+        <p class="text-success fw-bold">Ví dụ: chữ xanh đậm</p>
+
+        <!-- 3. Buttons -->
+        <h2>3️⃣ Buttons</h2>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-outline-danger">Outline Danger</button>
+
+        <!-- 4. Cards -->
+        <h2>4️⃣ Card (Thẻ hiển thị nội dung)</h2>
+        <div class="card" style="width: 18rem;">
+            <img src="https://picsum.photos/300/200" class="card-img-top" alt="Ảnh minh họa">
+            <div class="card-body">
+                <h5 class="card-title">Thẻ Bootstrap</h5>
+                <p class="card-text">Thẻ card dùng để trình bày nội dung gọn gàng, có hình, tiêu đề và nút.</p>
+                <a href="#" class="btn btn-primary">Xem thêm</a>
+            </div>
+        </div>
+
+        <!-- 5. Forms -->
+        <h2>5️⃣ Form cơ bản</h2>
+        <form class="box">
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Nhập email...">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" placeholder="Nhập mật khẩu...">
+            </div>
+            <button class="btn btn-success w-100">Đăng nhập</button>
+        </form>
+
+        <!-- 6. Navbar -->
+        <h2>6️⃣ Navbar</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MySite</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dịch vụ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 7. Responsive Example -->
+        <h2>7️⃣ Responsive</h2>
+        <p class="text-muted">Thử thay đổi kích thước trình duyệt để thấy bố cục thay đổi theo từng mốc.</p>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3 box">Cột 1</div>
+            <div class="col-sm-6 col-lg-3 box">Cột 2</div>
+            <div class="col-sm-6 col-lg-3 box">Cột 3</div>
+            <div class="col-sm-6 col-lg-3 box">Cột 4</div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+/*---------------------------------------------------------*/
+/* 🧱 1. BỐ CỤC & KÍCH THƯỚC (Layout, Box Model, Positioning) */
+/*---------------------------------------------------------*/
+*,
+html,
+body,
+header,
+section,
+footer,
+.row,
+.clearfix,
+.btn,
+.logo,
+.main-nav,
+.heading-main-box,
+.about-picture,
+.product-box,
+form,
+input,
+textarea {
+    margin: 0;
+    margin: 0 auto;
+    margin: 0 5px;
+    margin: 0 auto 50px;
+    margin: 5px 0;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 5px;
+    padding: 15px 30px;
+    padding: 20px;
+    padding: 3px 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    width: 100%;
+    width: 60%;
+
+    width: 1140px;
+    
+
+    max-width: 1140px;
+    height: 50px;
+    
+    height: 100vh;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+    float: left;
+    float: right;
+
+    position: absolute;
+    position: relative;
+    position: fixed;
+
+    top: 0;
+    top: 30px;
+    top: 50%;
+    left: 0;
+    left: 30px;
+    left: 40%;
+    right: 0;
+    right: 100px;
+    bottom: 50px;
+    z-index: 900;
+
+    display: block;
+    display: inline-block;
+    display: table;
+    display: none;
+
+    vertical-align: middle;
+    resize: none;
+}
+
+/*---------------------------------------------------------*/
+/* 🖋️ 2. VĂN BẢN & FONT (Typography) */
+/*---------------------------------------------------------*/
+html,
+body,
+h1, h2, h3,
+p,
+label,
+cite,
+figcaption {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    
+    font-size: 80%;
+    font-size: 100%;
+    font-size: 120%;
+    
+    font-weight: 300;
+   
+    font-style: normal;
+    font-style: italic;
+    color: #5a5a5a;
+    
+    text-transform: uppercase;
+    text-align: center;
+    text-align: left;
+    text-decoration: none;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 135%;
+   
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+/*---------------------------------------------------------*/
+/* 🎨 3. MÀU SẮC & NỀN (Color / Background) */
+/*---------------------------------------------------------*/
+header,
+section,
+footer,
+.testimonials-section,
+.contact-section,
+.products-section {
+   
+    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(48, 47, 47, 0.3);
+    
+    background-color: #494949;
+
+    background-image: linear-gradient(45deg, rgba(2, 33, 64, 0.8) 55%, rgb(45, 95, 93, 0.85)), url('../img/background4.jpeg');
+    background-image: url('../img/background2.jpeg');
+    background-image: none;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-attachment: scroll;
+}
+
+/*---------------------------------------------------------*/
+/* 🧩 4. HIỆU ỨNG & ANIMATION */
+/*---------------------------------------------------------*/
+.btn,
+.about-picture img,
+.picture-title,
+.social-icons li,
+.logo-sponsor {
+    transition: all .3s;
+    
+    transform: translate(-45%, -55%);
+    transform: translate(-55%, 100%);
+    transform: scale(1.2);
+    filter: brightness(55%) blur(2px);
+    opacity: 0;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------*/
+/* 🔲 5. ĐƯỜNG VIỀN (Border & Outline) */
+/*---------------------------------------------------------*/
+img,
+textarea,
+input,
+.product-box,
+h3 {
+   
+    border: 2px solid #265077;
+    border: 1px solid rgba(70, 68, 68, 0.7);
+    border-radius: 5px;
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    outline: none;
+}
+
+/*---------------------------------------------------------*/
+/* 🧮 6. DANH SÁCH, TRÍCH DẪN, PSEUDO */
+/*---------------------------------------------------------*/
+ul,
+ol,
+blockquote,
+cite {
+    list-style: none;
+    list-style-type: none;
+    content: "";
+    content: '\201C';
+    quotes: none;
+}
+
+/*---------------------------------------------------------*/
+/* 📷 7. HÌNH ẢNH & MEDIA */
+/*---------------------------------------------------------*/
+img,
+.logo-sponsor {
+    box-shadow: 0px 5px 15px 5px #265077;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------*/
+/* 💡 8. KHÁC (Miscellaneous) */
+/*---------------------------------------------------------*/
+body {
+    overflow-x: hidden;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------*/
+/* 📱 MEDIA QUERY */
+/*---------------------------------------------------------*/
+
+/* 💻 Laptop lớn / Desktop */
+@media (max-width: 1200px) {}
+
+/* 💻 Laptop nhỏ / Tablet ngang */
+@media (max-width: 1024px) {}
+
+/* 📱 Tablet dọc */
+@media (max-width: 768px) {}
+
+/* 📱 Điện thoại lớn */
+@media (max-width: 576px) {}
+
+/* 📱 Điện thoại nhỏ */
+@media (max-width: 480px) {}
+
+/*block: div, p, ul, nav, form, section, header, main, footer
+
+inline: a, span, <kiểu chữ>, label
+
+inline-block: input, button, img, select, textarea
